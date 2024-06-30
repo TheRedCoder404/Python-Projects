@@ -21,3 +21,12 @@ Hi, hier sind alle Python dateien, welche ich bisher seit ich Python lerne, erst
   * Visueller Punkte zähler
   
 </details>
+
+
+<details>
+  <summary>2. InverseTest.py</summary>
+</details>
+
+
+3. flexibleInverse.py
+4. InversenRechnerV3.py
