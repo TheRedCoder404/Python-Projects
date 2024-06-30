@@ -50,6 +50,9 @@ Hi, hier sind alle Python dateien, welche ich bisher seit ich Python lerne, erst
 
 <details>
   <summary>5. ZahlenRaten.py</summary>
+
+  Dies ist mein erstes kleines Spiel welches ich probiert hatte. Es ist ein kleines Spiel wo man eine zufällige Zahl zwischen 0 und 100 erraten muss, es gibt sogar Tipps wenn man es nicht schafft und am ende wird auch ausgegeben mit wie vielen versuchen man die Zahl erraten hat.
+  
 </details>
 
 
