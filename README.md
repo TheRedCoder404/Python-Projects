@@ -220,31 +220,50 @@ Die Dateien welche mit Aufg anfangen sind Aufgaben von einem Bogen, welchen wir 
 
 <details>
   <summary>23. ClassTest.py</summary>
+
+  Mein erster Test mit Classes ohne mir vorher irgendwas dazu angeguckt zu haben.
+  
 </details>
 
 
 <details>
   <summary>24. Fibonacci.py</summary>
+
+  Ein kleines Script um eine Fibonacci Zahl zu ermitteln, weil ich mal eine in einem YouTube Video gesehen habe und mir gedacht habe, da kommt doch was nicht hin. Ich hatte recht, die Person hatte sich um eine Zahl verrechnet.
+  
 </details>
 
 
 <details>
   <summary>25. filenameprinter.py</summary>
+
+  Dies ist tatsächlich das Script welches ich geschrieben habe um mir eine liste zu erstellen, welche den namen von jedem Script usw. enthält und dazu noch ein bisschen mehr um die Formatierung für GitHub zu vereinfachen, damit ich das ganze einfach rüber kopieren konnte, um mir das schreiben der ganzen Beschreibungen zu vereinfachen.
+  
 </details>
 
 
 <details>
   <summary>26. GuiTest.py</summary>
+
+  Dies ist mein erster versuch an einem non-textbased Script bzw. mein erster versuch mal eine Library zu probieren, welche das erstellen eines GUIs ermöglicht.
+  
 </details>
 
 
 <details>
   <summary>27. HackerScreen.py</summary>
+
+  Dies war eine witzige Idee die ich kurz vor einer Studienfahrt hatte. Das prinzip ist simpel, einfach ein paar Hex werte recht schnell in eine Konsole printen, damit es schön so aussieht wie in diesen total übertriebenen Hacking Szenen in Serien. Der gendanke war, dass die reaktion von jemandem _nicht so technik affinen_ ist, recht witzig wäre, wenn diese Person das auf dem Bildschirm sieht, wenn ich mein Laptop offen stehen lasse.  
+  Zu dieser Situation ist es leider nocht gekommen, aber die blicke von freunden, wenn ich denen das Script gezeigt habe, waren auch witzig.
+  
 </details>
 
 
 <details>
   <summary>28. HackerScreenC.py</summary>
+
+  Dieses Script ist quasi das aus Punkt 27, nur dass man jetzt die _breite_ einstellen kann, also mit wie vielen Hex werten von links nach rechts die Konsole gefüllt wird. Noch dazu ist das ganze jetzt bunt, dafür steht das C im namen, bzw. es steht für **__C__olor**, also Farbe.
+  
 </details>
 
 
