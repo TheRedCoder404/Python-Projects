@@ -201,7 +201,7 @@ Die Dateien welche mit Aufg anfangen sind Aufgaben von einem Bogen, welchen wir 
   * Übersetzen in beide richtungen
   * Auswahlmöglichkeit zwischen mehreren wegen ein Leerzeichen darzustellen 
 
-  > [!NOTE]
+  > [Übrigens]
   > Dies ist die erste Challenge von der Website "https://www.codecademy.com/resources/blog/advanced-python-code-challenges/".
   
 </details>
@@ -212,7 +212,7 @@ Die Dateien welche mit Aufg anfangen sind Aufgaben von einem Bogen, welchen wir 
 
   In dieser Challenge war es die Aufgabe eine funktion zu schreiben, welche eine Nummer akzeptiert und das ergebnis daraus zurück gibt, welches aus der größtmöglichsten Zahl, die man aus den Ziffern dieser Zahl machen kann, minus der kleinsten Zahl, die man aus den Ziffern machen kann, besteht.
 
-  > [!NOTE]
+  > [Übrigens]
   > Dies ist die neunte Challenge von der Website "https://www.codecademy.com/resources/blog/advanced-python-code-challenges/".
   
 </details>
