@@ -254,7 +254,7 @@ Die Dateien welche mit Aufg anfangen sind Aufgaben von einem Bogen, welchen wir 
   <summary>27. HackerScreen.py</summary>
 
   Dies war eine witzige Idee die ich kurz vor einer Studienfahrt hatte. Das prinzip ist simpel, einfach ein paar Hex werte recht schnell in eine Konsole printen, damit es schön so aussieht wie in diesen total übertriebenen Hacking Szenen in Serien. Der gendanke war, dass die reaktion von jemandem _nicht so Technikaffinen_ ist, recht witzig wäre, wenn diese Person das auf dem Bildschirm sieht, wenn ich mein Laptop offen stehen lasse.  
-  Zu dieser Situation ist es leider nocht gekommen, aber die blicke von freunden, wenn ich denen das Script gezeigt habe, waren auch witzig.
+  Zu dieser Situation ist es leider nicht gekommen, aber die Blicke von Freunden, wenn ich denen das Script gezeigt habe, waren auch witzig.
   
 </details>
 
