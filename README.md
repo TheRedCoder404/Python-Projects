@@ -183,17 +183,17 @@ Die Dateien welche mit Aufg anfangen sind Aufgaben von einem Bogen, welchen wir 
 
 
 <details>
-  <summary>30. names.txt</summary>
+  <summary>30. NewMazeTest.py</summary>
 </details>
 
 
 <details>
-  <summary>31. Narcisstic.py</summary>
+  <summary>31. names.txt</summary>
 </details>
 
 
 <details>
-  <summary>32. NewMazeTest.py</summary>
+  <summary>32. Narcisstic.py</summary>
 </details>
 
 
@@ -208,70 +208,55 @@ Die Dateien welche mit Aufg anfangen sind Aufgaben von einem Bogen, welchen wir 
 
 
 <details>
-  <summary>35. pyTest</summary>
+  <summary>35. TankStatistik.py</summary>
 </details>
 
 
 <details>
-  <summary>36. README.md</summary>
+  <summary>36. Test 2_0 (1).py</summary>
 </details>
 
 
 <details>
-  <summary>37. save.json</summary>
+  <summary>37. Test 2_2.py</summary>
 </details>
 
 
 <details>
-  <summary>38. TankStatistik.py</summary>
+  <summary>38. Test.py</summary>
 </details>
 
 
 <details>
-  <summary>39. Test 2_0 (1).py</summary>
+  <summary>39. TestComands.py</summary>
 </details>
 
 
 <details>
-  <summary>40. Test 2_2.py</summary>
+  <summary>40. TestCommands2.py</summary>
 </details>
 
 
 <details>
-  <summary>41. Test.py</summary>
+  <summary>41. TestCommands3.py</summary>
 </details>
 
 
 <details>
-  <summary>42. TestComands.py</summary>
+  <summary>42. TickTackToe.py</summary>
 </details>
 
 
 <details>
-  <summary>43. TestCommands2.py</summary>
+  <summary>43. untitled4.py</summary>
 </details>
 
 
 <details>
-  <summary>44. TestCommands3.py</summary>
+  <summary>44. Vol.py</summary>
 </details>
 
 
 <details>
-  <summary>45. TickTackToe.py</summary>
-</details>
-
-
-<details>
-  <summary>46. untitled4.py</summary>
-</details>
-
-
-<details>
-  <summary>47. Vol.py</summary>
-</details>
-
-
-<details>
-  <summary>49. ZeroDivid.py</summary>
+  <summary>45. ZeroDivid.py</summary>
 </details>
