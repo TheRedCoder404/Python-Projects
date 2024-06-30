@@ -3,7 +3,9 @@ import os
 path = input()
 txtfile = open("names.txt", "a")
 
-for i in os.listdir(path):
-    txtfile.write(f"\n{i}")
+for i, n in enumerate(os.listdir(path), start=1):
+    txtfile.write("\n\n\n<details>")
+    txtfile.write(f"\n  <summary>{i}. {n}</summary>")
+    txtfile.write("\n</details>")
 
 txtfile.close()
