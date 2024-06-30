@@ -61,7 +61,7 @@ Die Dateien welche mit Aufg anfangen sind Aufgaben von einem Bogen, welchen wir 
 <details>
   <summary>6. Aufg5.py</summary>
 
-  Hier lautete die Aufgabe:
+  Hier lautete die Aufgabe: 
   Entwerfen Sie ein Script, um für einen eingegebenen Umsatz die Kategorie zu bestimmen. Als Umsätze der Kategorie A zählen Umsätze von mehr als 10.000 €, der Kategorie B entsprechen Umsätze zwischen 1000 € und 10.000 € und Kategorie C sind Umsätze unter 1000 €.
   
 </details>
