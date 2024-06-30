@@ -262,7 +262,7 @@ Die Dateien welche mit Aufg anfangen sind Aufgaben von einem Bogen, welchen wir 
 <details>
   <summary>28. HackerScreenC.py</summary>
 
-  Dieses Script ist quasi das aus Punkt 27, nur dass man jetzt die _breite_ einstellen kann, also mit wie vielen Hex werten von links nach rechts die Konsole gefüllt wird. Noch dazu ist das ganze jetzt bunt, dafür steht das C im namen, bzw. es steht für **_C_olor**, also Farbe.
+  Dieses Script ist quasi das aus Punkt 27, nur dass man jetzt die _breite_ einstellen kann, also mit wie vielen Hex werten von links nach rechts die Konsole gefüllt wird. Noch dazu ist das ganze jetzt bunt, dafür steht das C im namen, bzw. es steht für _**C**olor_, also Farbe.
   
 </details>
 
