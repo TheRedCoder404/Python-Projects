@@ -178,7 +178,7 @@ Die Dateien welche mit Aufg anfangen sind Aufgaben von einem Bogen, welchen wir 
   <summary>19. aufg24.py</summary>
 
   Hier lautete die Aufgabe:
-  Entwerfen Sie ein Script, um eine eingegebene Zeichenkette zu formatieren. Befindet sich ein "_" vor einem Wort, dann wird das gesamte Wort groß geschrieben. Befindet sich ein "_" hinter dem Wort, dann wird das gesamte Wort klein geschrieben. Befindet sich "_" vor und hinter einem Wort, dann zählt das letzte Zeichen. Befindet sich "_" zwischen zwei Worten, dann gehört zur Zeichenkette. Hat es kein Formatierungszeichen, dann bleibt das Wort unverändert.
+  Entwerfen Sie ein Script, um eine eingegebene Zeichenkette zu formatieren. Befindet sich ein ~"_" vor einem Wort, dann wird das gesamte Wort groß geschrieben. Befindet sich ein ~"_" hinter dem Wort, dann wird das gesamte Wort klein geschrieben. Befindet sich ~"_" vor und hinter einem Wort, dann zählt das letzte Zeichen. Befindet sich ~"_" zwischen zwei Worten, dann gehört zur Zeichenkette. Hat es kein Formatierungszeichen, dann bleibt das Wort unverändert.
   
 </details>
 
