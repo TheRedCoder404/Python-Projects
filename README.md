@@ -354,9 +354,9 @@ Die Dateien welche mit Aufg anfangen sind Aufgaben von einem Bogen, welchen wir 
   TicTacToe.py müsste dank dem namen der Datei ziemlich selbst erklärend sein. Es ist mein erster TicTacToe veruch und dazu auch noch Text based.  
   Hier habe ich auch die Win-conditions für Punkt 1 hergehohlt, da ich keine lust hatte mir die nochmal von neuem auf zu schreiben.  
   Dies ist tatsächlich auch voll funktionsfähig, features sind:
-  * Names wahl für beide Spieler
+  * Namens wahl für beide Spieler
   * Feldauswahl mit 1 - 9
-  * Automatische wechsel zwischen den Spielern
+  * Automatischer wechsel zwischen den Spielern
   * Erkennung von nicht möglichen Spielzügen
   * Erkennung wenn jemand gewonnen hat
   * Ausgabe von einem Gewonnen Text mit dem Namen des Gewinners
@@ -367,7 +367,7 @@ Die Dateien welche mit Aufg anfangen sind Aufgaben von einem Bogen, welchen wir 
 <details>
   <summary>40. untitled4.py</summary>
 
-  Dieses Script ist eine TwoSum funktione, welche ich für LeetCode geschrieben habe, wobei ich diese in PyCharm geschrieben habe, da ich den Editor besser finde.
+  Dieses Script ist eine TwoSum Funktion, welche ich für LeetCode geschrieben habe, wobei ich diese in PyCharm geschrieben habe, da ich den Editor besser finde.
   
 </details>
 
