@@ -269,84 +269,120 @@ Die Dateien welche mit Aufg anfangen sind Aufgaben von einem Bogen, welchen wir 
 
 <details>
   <summary>29. MazeTest.py</summary>
+
+  Dieses Script war ein kleiner Test, ohne google oder sonst irgendwelche hilfsmittel, ein Script zu schreiben, welches ein Labyrith generiert. Dies hat für eine ganze weile ein bisschen funktioniert, als ich jedoch ein bisschen mehr hinzufügen wollte hatte es nichtmehr funktioniert, also habe ich das Script erstmal ruhen lassen, da mir das als test gereicht hat.
+  
 </details>
 
 
 <details>
   <summary>30. NewMazeTest.py</summary>
+
+  Dieses Script ist quasi die 2. Iteration von Punkt 29, welche ich begonnen hatte, weil ich mich nochmal daran versuchen wollte einen Labyrinth generator zu erstellen und weil ich diesmal auch ein kontrollierbares Symbol hinzufügen wollte (ein +), womit man diese Labyrinthe dann versuchen kann zu Lösen.  
+  Hier ist auch eine weg generierung für den richtigen weg drin und ein + welches man bewegen kann und ein einstellbares Feld auf welchem man _laufen_ kann, der rest fehlt jedoch.
+  
 </details>
 
 
 <details>
   <summary>31. names.txt</summary>
+
+  Dies ist die Textdatei, welche ich mir unter Punkt 25 habe gernerieren lassen.
+  
 </details>
 
 
 <details>
   <summary>32. Narcisstic.py</summary>
+
+  Dies ist eine kleine Funktion welche ich für LeetCode geschrieben habe, um herauszufinden, ob die eingegebene Zahle eine Narzistische Zahl ist oder nicht.
+  
 </details>
 
 
 <details>
   <summary>33. nuetzliche_functions.py</summary>
+
+  Hier in dieses Script habe ich ein paar nützliche Funktionen hineingeschrieben, welche ich immer mal wieder benutze oder vielleich benutzen könnte.
+  
 </details>
 
 
 <details>
   <summary>34. Perfect.py</summary>
+
+  Dies ist eine kleine Funktion welche ich auch für LeetCode geschrieben habe, um herauszufinden, ob eine eingegebene Zahl eine Perfekte Zahl ist oder nicht.
+  
 </details>
 
 
 <details>
   <summary>35. TankStatistik.py</summary>
+
+  Dies ist ein kleines Scrip welches ich geschriben habe um meine Tankstellen besuche zu dokumentieren und daraus einfach statistiken machen zu können, habe ich jedoch noch nicht wirklich weit geführt. Man kann aber schon Eintäge eintragen und in einer json Datei speichern und andere bzw. vorherige _Statistiken_ laden.
+  
 </details>
 
 
 <details>
-  <summary>36. Test 2_0 (1).py</summary>
+  <summary>36. Test.py</summary>
+
+  Dieses Script ist das aller erste Script welches ich mit Python erstellt habe. Es besteht quasi aus einer leicht abgeänderten Version des Beispiel Scripts aus dem Unterricht.
+  
 </details>
 
 
 <details>
-  <summary>37. Test 2_2.py</summary>
+  <summary>37. Test 2_0 (1).py und Test 2_2.py</summary>
+
+  Diese Scripte noch weiter veränderte versionen vom Script aus Punkt 36, weil ich im Unterrricht ein wenig langeweile hatte und ein bisschen mit Python rumtesten wollte.
+  
 </details>
 
 
 <details>
-  <summary>38. Test.py</summary>
+  <summary>38. TestComands.py, TestCommands2.py und TestCommands3.py</summary>
+
+  Dies sind 3 Scripte welche rein zum Testen sind, falls ich gerade an einem andren Script arbeite und dafür aber erst etwas testen muss. Ich habe drei davon gemacht, damit ich 3 dinge simultan testen kann, falls ich z. B. das was ich TestCommands.py geschrieben habe noch brauche, aber trotzdem etwas anderes z. B. sogar genau dafür, testen muss.
+  
 </details>
 
 
 <details>
-  <summary>39. TestComands.py</summary>
+  <summary>39. TickTackToe.py</summary>
+
+  TicTacToe.py müsste dank dem namen der Datei ziemlich selbst erklärend sein. Es ist mein erster TicTacToe veruch und dazu auch noch Text based.  
+  Hier habe ich auch die Win-conditions für Punkt 1 hergehohlt, da ich keine lust hatte mir die nochmal von neuem auf zu schreiben.  
+  Dies ist tatsächlich auch voll funktionsfähig, features sind:
+  * Names wahl für beide Spieler
+  * Feldauswahl mit 1 - 9
+  * Automatische wechsel zwischen den Spielern
+  * Erkennung von nicht möglichen Spielzügen
+  * Erkennung wenn jemand gewonnen hat
+  * Ausgabe von einem Gewonnen Text mit dem Namen des Gewinners
+  
 </details>
 
 
 <details>
-  <summary>40. TestCommands2.py</summary>
+  <summary>40. untitled4.py</summary>
+
+  Dieses Script ist eine TwoSum funktione, welche ich für LeetCode geschrieben habe, wobei ich diese in PyCharm geschrieben habe, da ich den Editor besser finde.
+  
 </details>
 
 
 <details>
-  <summary>41. TestCommands3.py</summary>
+  <summary>41. Vol.py</summary>
+
+  Das ist ein recht neues Script, welches ich geschrieben habe, um einen ansatz für eine Lösung für eine Aufgabe aus dem Mathe Unterrich zu testen. Und zwar sollte man das maximale Volumen von einer Box ermitteln, welche man aus einer platte mit gewissen dimensionen formen kann. 
+  
 </details>
 
 
 <details>
-  <summary>42. TickTackToe.py</summary>
-</details>
+  <summary>42. ZeroDivid.py</summary>
 
-
-<details>
-  <summary>43. untitled4.py</summary>
-</details>
-
-
-<details>
-  <summary>44. Vol.py</summary>
-</details>
-
-
-<details>
-  <summary>45. ZeroDivid.py</summary>
+  Dieses Script habe ich einfach nur erstellt um zu gucken, was in Python passiert, wenn man durch 0 teilt.
+  
 </details>
