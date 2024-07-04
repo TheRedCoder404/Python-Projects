@@ -1,251 +1,83 @@
-
-
-
 <details>
-  <summary>1. .git</summary>
+  <summary>1. Aufgaben</summary>
+
+  Dies sind Aufgaben, welche unserer Klasse von unserem Informarik Lehrer gegeben wurde. Eigentlich sind dort Aufgaben zum erstellen von PAPs drin, allerdings machen wir damit Python Scripte.
+
 </details>
 
 
 <details>
-  <summary>2. .gitignore</summary>
+  <summary>2. Challenges</summary>
+
+  Das sind ein paar Challenges von der Website "https://www.codecademy.com/resources/blog/advanced-python-code-challenges/". Ich habe von den zehn zwei gemacht, welche ich interessant fand.
+
 </details>
 
 
 <details>
-  <summary>3. Aufg10.py</summary>
+  <summary>3. ErsteScripts</summary>
+
+  Das sind die ersten paar Scripte welche ich in Python geschrieben habe. Sie basieren auf der ersten Aufgabe, welche wir von unserem Lehrer zu Programmieren mit Python erhalten haben und wenn mit langweilig war, habe ich dieses Script immer ein wenig erweitert.
+
 </details>
 
 
 <details>
-  <summary>4. Aufg11.py</summary>
+  <summary>4. Mathe</summary>
+
+  Dort ist bisher nur ein Script drin. In diesen Ordner kommen Scripte welche ich quasi für Mathe Programmiere.
+
 </details>
 
 
 <details>
-  <summary>5. Aufg12.py</summary>
+  <summary>5. nuetzliche_fuctions</summary>
 </details>
 
 
 <details>
-  <summary>6. aufg13.py</summary>
+  <summary>6. ReadmePrinter</summary>
+
+  Dort ist das Script drin, mit welchem ich es ein wenig Automatisiert habe die README.md zu schreiben.
+
 </details>
 
 
 <details>
-  <summary>7. aufg14.py</summary>
+  <summary>7. SpielScripts</summary>
+
+  Hier habe ich ein paar kleine spielereien drin, welche ich mir über die, wenn auch kleine, Zeit überlegt habe.
+
 </details>
 
 
 <details>
-  <summary>8. aufg17.py</summary>
+  <summary>8. TankStatistik</summary>
+
+  Da habe ich mal versucht ein Script zu schreiben, mit welchem ich meine Tank ausgaben im blick halten kann. Da ich jedoch sehr oft vergessen habe mit die Daten wie Zweitpunkt, gefahrene distanz und Preis aufzuschreiben, konnte ich das Projekt ziemlich schnell nicht mehr weiter führen. Ich habe aber dadurch ein bisschen den umgang mit JSON Dateien gelernt.
+
 </details>
 
 
 <details>
-  <summary>9. Aufg18.py</summary>
+  <summary>9. TestScripts</summary>
+
+  Hier sind allerlei Scripte drin, mit welchen ich alles mögliche getestet habe. Sogar wie Python auf durch 0 Teilen reagiert. Und auch 3 Scripte, mit welchen ich, wärend ich etwas Programmiere, zeitgleich funktionen oder anderweitiges testen kann.
+
 </details>
 
 
 <details>
-  <summary>10. aufg19.py</summary>
+  <summary>10. TicTacToe</summary>
+
+  Dies ist mein 2. Projekt mit pygame. Mein Anspruch war, ein Spielbares TicTacToe zu coden.
+
 </details>
 
 
 <details>
-  <summary>11. aufg20.py</summary>
-</details>
+  <summary>11. ZahlenChecks</summary>
 
+  Hier sind ein paar Scripte, mit welchen man testen kann, ob die eingegeben Zahl, zur jeweiligen Gruppe zählt.
 
-<details>
-  <summary>12. aufg24.py</summary>
-</details>
-
-
-<details>
-  <summary>13. aufg28.py</summary>
-</details>
-
-
-<details>
-  <summary>14. Aufg5.py</summary>
-</details>
-
-
-<details>
-  <summary>15. Aufg6Erweitert.py</summary>
-</details>
-
-
-<details>
-  <summary>16. Aufg6Lite.py</summary>
-</details>
-
-
-<details>
-  <summary>17. Aufg9.py</summary>
-</details>
-
-
-<details>
-  <summary>18. CC1(MorseCode).py</summary>
-</details>
-
-
-<details>
-  <summary>19. CC9.py</summary>
-</details>
-
-
-<details>
-  <summary>20. ClassTest.py</summary>
-</details>
-
-
-<details>
-  <summary>21. felxibleInverse.py</summary>
-</details>
-
-
-<details>
-  <summary>22. Fibonacci.py</summary>
-</details>
-
-
-<details>
-  <summary>23. filenameprinter.py</summary>
-</details>
-
-
-<details>
-  <summary>24. GuiTest.py</summary>
-</details>
-
-
-<details>
-  <summary>25. HackerScreen.py</summary>
-</details>
-
-
-<details>
-  <summary>26. HackerScreenC.py</summary>
-</details>
-
-
-<details>
-  <summary>27. InversenRechnerV3.py</summary>
-</details>
-
-
-<details>
-  <summary>28. InverseTest.py</summary>
-</details>
-
-
-<details>
-  <summary>29. MazeTest.py</summary>
-</details>
-
-
-<details>
-  <summary>30. names.txt</summary>
-</details>
-
-
-<details>
-  <summary>31. Narcisstic.py</summary>
-</details>
-
-
-<details>
-  <summary>32. NewMazeTest.py</summary>
-</details>
-
-
-<details>
-  <summary>33. nuetzliche_functions.py</summary>
-</details>
-
-
-<details>
-  <summary>34. Perfect.py</summary>
-</details>
-
-
-<details>
-  <summary>35. pyTest</summary>
-</details>
-
-
-<details>
-  <summary>36. README.md</summary>
-</details>
-
-
-<details>
-  <summary>37. save.json</summary>
-</details>
-
-
-<details>
-  <summary>38. TankStatistik.py</summary>
-</details>
-
-
-<details>
-  <summary>39. Test 2_0 (1).py</summary>
-</details>
-
-
-<details>
-  <summary>40. Test 2_2.py</summary>
-</details>
-
-
-<details>
-  <summary>41. Test.py</summary>
-</details>
-
-
-<details>
-  <summary>42. TestComands.py</summary>
-</details>
-
-
-<details>
-  <summary>43. TestCommands2.py</summary>
-</details>
-
-
-<details>
-  <summary>44. TestCommands3.py</summary>
-</details>
-
-
-<details>
-  <summary>45. TickTackToe.py</summary>
-</details>
-
-
-<details>
-  <summary>46. untitled4.py</summary>
-</details>
-
-
-<details>
-  <summary>47. Vol.py</summary>
-</details>
-
-
-<details>
-  <summary>48. ZahlenRaten.py</summary>
-</details>
-
-
-<details>
-  <summary>49. ZeroDivid.py</summary>
-</details>
-
-
-<details>
-  <summary>50. __pycache__</summary>
 </details>

@@ -1,14 +1,27 @@
 import os
 import json
 
-print(os.path.isfile("names.txt"))
+if os.path.isfile("ReadmePrinter/names.txt"):
+    open("ReadmePrinter/names.txt", "w").close()
+
+dont = ["__pycache__", ".gitignore", ".git", "README.md"]
+
+description = json.load(open("ReadmePrinter/descriptions.json"))
 
 path = input()
-txtfile = open("names.txt", "a")
+txtfile = open("ReadmePrinter/names.txt", "a")
 
-for i, n in enumerate(os.listdir(path), start=1):
-    txtfile.write("\n\n\n<details>")
-    txtfile.write(f"\n  <summary>{i}. {n}</summary>")
-    txtfile.write("\n</details>")
+numbers = 1
+for n in os.listdir(path):  # ich benutze hier kein enummerate, weil es sonst zahlen überspringt
+    if not n in dont:
+        if numbers == 1:
+            txtfile.write("<details>")
+        else:
+            txtfile.write("\n\n\n<details>")
+        txtfile.write(f"\n  <summary>{numbers}. {n}</summary>")
+        if n in description:
+            txtfile.write(f"\n\n  {description[n]}\n")
+        txtfile.write("\n</details>")
+        numbers += 1
 
 txtfile.close()
