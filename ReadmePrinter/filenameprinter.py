@@ -15,7 +15,7 @@ numbers = 1
 for n in os.listdir(path):  # ich benutze hier kein enummerate, weil es sonst zahlen überspringt
     if not n in dont:
         if numbers == 1:
-            txtfile.write("<details>")
+            txtfile.write("<details open>")
         else:
             txtfile.write("\n\n\n<details>")
         txtfile.write(f"\n  <summary>{numbers}. {n}</summary>")

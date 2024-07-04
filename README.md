@@ -1,4 +1,4 @@
-<details>
+<details open>
   <summary>1. Aufgaben</summary>
 
   Dies sind Aufgaben, welche unserer Klasse von unserem Informarik Lehrer gegeben wurde. Eigentlich sind dort Aufgaben zum erstellen von PAPs drin, allerdings machen wir damit Python Scripte.
@@ -60,7 +60,12 @@
 
 
 <details>
-  <summary>9. TestScripts</summary>
+  <summary>9. TempReadme.txt</summary>
+</details>
+
+
+<details>
+  <summary>10. TestScripts</summary>
 
   Hier sind allerlei Scripte drin, mit welchen ich alles mögliche getestet habe. Sogar wie Python auf durch 0 Teilen reagiert. Und auch 3 Scripte, mit welchen ich, wärend ich etwas Programmiere, zeitgleich funktionen oder anderweitiges testen kann.
 
@@ -68,7 +73,7 @@
 
 
 <details>
-  <summary>10. TicTacToe</summary>
+  <summary>11. TicTacToe</summary>
 
   Dies ist mein 2. Projekt mit pygame. Mein Anspruch war, ein Spielbares TicTacToe zu coden.
 
@@ -76,7 +81,7 @@
 
 
 <details>
-  <summary>11. ZahlenChecks</summary>
+  <summary>12. ZahlenChecks</summary>
 
   Hier sind ein paar Scripte, mit welchen man testen kann, ob die eingegeben Zahl, zur jeweiligen Gruppe zählt.
 
