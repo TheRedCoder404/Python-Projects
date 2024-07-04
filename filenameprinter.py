@@ -1,4 +1,7 @@
 import os
+import json
+
+print(os.path.isfile("names.txt"))
 
 path = input()
 txtfile = open("names.txt", "a")

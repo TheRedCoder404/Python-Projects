@@ -244,3 +244,8 @@
 <details>
   <summary>49. ZeroDivid.py</summary>
 </details>
+
+
+<details>
+  <summary>50. __pycache__</summary>
+</details>
