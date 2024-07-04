@@ -1,5 +1,5 @@
 > [Übrigens]
-> Dies ist die erste Challenge von der Website "https://www.codecademy.com/resources/blog/advanced-python-code-challenges/".
+> Dies sind Challenges von der Website "https://www.codecademy.com/resources/blog/advanced-python-code-challenges/".
 
 <details open>
   <summary>CC1(MorseCode).py</summary>
