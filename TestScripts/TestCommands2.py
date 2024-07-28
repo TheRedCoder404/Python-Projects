@@ -1,9 +1,18 @@
-import os
+import json
+import sys
+sys.path.append('../Git/RezepteRechner')
+import ItemCreation
+sys.path.append('../Git/nuetzliche_functions')
+import nuetzliche_functions as nf
 
-path = input()
-txtfile = open("names.txt", "a")
+items = []
 
-for i in os.listdir(path):
-    txtfile.write(f"\n{i}")
+with open("RezepteRechner/test.json", "r") as outfile:
+    saveList = json.load(outfile)
+outfile.close
 
-txtfile.close()
+for i in saveList:
+    items.append(ItemCreation.Item(diction=i))
+
+for i in items:
+    print(i.name)

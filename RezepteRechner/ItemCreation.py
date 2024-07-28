@@ -10,6 +10,7 @@ class Item:
             self.name = diction["name"]
             self.output = diction["output"]
             self.input = diction["input"]
+            self.diction = None
 
     def changeOutput(self, output: dict) -> None:
         self.output.update(output)
@@ -17,6 +18,5 @@ class Item:
     def changeInput(self, input: dict) -> None:
         self.input.update(input)
 
-    def item2dict(self, item) -> dict:
-        diction: dict = {"name": item.name, "output": item.output, "input": item.input}
-        return diction
+    def item2dict(item):
+        return item.__dict__

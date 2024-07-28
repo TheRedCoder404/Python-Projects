@@ -19,12 +19,32 @@ def printAddItemMode() -> None:
     print("-------------------------------")
     print("------- Add Recipe Mode -------")
     print("-------------------------------")
+    print("\n\n")
 
 def printListItems() -> None:
     print("-------------------------------")
     print("------ List Recipe Mode -------")
     print("-------------------------------")
     print("\n\nAlle Rezepte:\n")
+
+def printEditRecipe() -> None:
+    print("-------------------------------")
+    print("------ Edit Recipe Mode -------")
+    print("-------------------------------")
+    print("\n\n")
+
+def printRechnerMode() -> None:
+    print("-------------------------------")
+    print("-------- Rechner Mode ---------")
+    print("-------------------------------")
+    print("\n\n")
+
+def printDelRecipe() -> None:
+    print(red)
+    print("-------------------------------")
+    print("------ Recipe Delete Mode -----")
+    print("-------------------------------")
+    print(normal + "\n\n")
 
 def printHelp(inputlist: list) -> None:
     if len(inputlist) < 2:
@@ -36,7 +56,7 @@ def printHelp(inputlist: list) -> None:
 def save() -> None:
     saveList = []
     for i in items:
-        diction: dict = i.item2dict
+        diction = i.item2dict()
         saveList.append(diction)
     save = open("RezepteRechner/items.json", "w")
     saveJson = json.dumps(saveList)
@@ -45,18 +65,56 @@ def save() -> None:
 
 def load() -> None:
     if os.path.isfile("RezepteRechner/items.json"):
-        global items
-        save = open("RezepteRechner/items.json", "r")
-        saveJson = save.read
-        saveList = json.loads(saveJson)
+        global items, itemNames
+        with open("RezepteRechner/items.json", "r") as outfile:
+            saveList = json.load(outfile)
+        outfile.close
         for i in saveList:
-            newItem = ItemCreation.Item(diction=i)
-            items.append(newItem)
-        save.close
+            for name in i["name"]:
+                itemNames.append(name)
+            items.append(ItemCreation.Item(diction=i))
 
 def lineClearer(lines: int) -> None:
     for i in range(lines):
         print(lnUp, end=lnClear)
+
+def editRecipe(recipe):
+    # Abfrage welche Items erzeugt werden
+    item = input("Was soll erzeugt werden?: ")
+    itemNameList = [item]
+
+    if input("Wird bei diesem Rezept noch ein Item erzeugt?: ") in nf.ja():
+        moreItems = True
+        while moreItems:
+            item = input("Wie heißt dieses Item?: ")
+            itemNameList.append(item)
+            if not input("Wird bei diesem Rezept noch ein Item erzeugt?: ") in nf.ja():
+                moreItems = False
+            
+    recipe.name = itemNameList
+    print()
+    # Abfrage wie viele Items erzeugt werden
+    for i in itemNameList:
+        recipe.changeOutput({f"{i}": int(input(f"Wie viel von \"{i}\" wird erzeugt?: "))})
+
+    # Abfrage welche Items benötigt werden
+    item = input("\nWelches Item wird für diese Rezept benötigt?: ")
+    itemNameList = [item]
+
+    if input("Wird für dieses Rezept noch ein Item benötigt?: ") in nf.ja():
+        moreItems = True
+        while moreItems:
+            item = input("Wie heißt dieses Item?: ")
+            itemNameList.append(item)
+            if not input("Wird für dieses Rezept noch ein Item benötigt?: ") in nf.ja():
+                moreItems = False
+            
+    print()
+    # Abfrage wie viele Items gebraucht werden
+    for i in itemNameList:
+        recipe.changeInput({f"{i}": int(input(f"Wie viel von \"{i}\" wird benötigt?: "))})
+            
+    return recipe
 
 
 options = {
@@ -72,16 +130,31 @@ options = {
         "beschr": "Listet alle bisher hinzugefügten Rezepte auf",
         "parameters": None
     },
+    "delRecipe": {
+        "beschr": "Erlaubt das Löschen von zuvor erstellten Rezepten",
+        "parameters": None
+    },
+    "rechner": {
+        "beschr": "Der Rechner, mit welchem man die Recourcen für die Rezepte rechnen kann",
+        "parameters": None
+    },
     "help": {
         "beschr": "Gibt eine liste an allen Befehlen mit der jeweiligen beschreibung aus",
-        "parmeters": None
+        "parameters": None
+    },
+    "exit": {
+        "beschr": "Schließt das Script",
+        "parameters": None
     }
 }
 
 items = []
+itemNames = []
 
 lnUp = '\033[1A'
 lnClear = '\x1b[2K'
+red = "\033[0;31m"
+normal = '\033[0m'
 
 dist = 15
 
@@ -92,8 +165,7 @@ load()
 printTitle()
 while main:
     while getOption:
-        option = input()
-        option = option.split()
+        option = [para.strip() for para in input().split("\"")]
         if option[0] in options:
             getOption = False
             print()
@@ -105,50 +177,15 @@ while main:
     if option[0] == "help":
         printHelp(option)
         getOption = True
-        option = ""
+        option = []
 
+    # Zum hinzufügen von Rezepten
     elif option[0] == "addRecipe":
         addItemMode = True
         clear()
         printAddItemMode()
         while addItemMode:
-            # Abfrage welche Items erzeugt werden
-            item = input("\n\nWas soll erzeugt werden?: ")
-            itemNameList = [item]
-
-            if input("Wird bei diesem Rezept noch ein Item erzeugt?: ") in nf.ja():
-                moreItems = True
-                while moreItems:
-                    item = input("Wie heißt dieses Item?: ")
-                    itemNameList.append(item)
-                    if input("Wird bei diesem Rezept noch ein Item erzeugt?: ") in nf.nein():
-                        moreItems = False
-            
-            newItem = ItemCreation.Item(itemNameList)   # Angabe welche Items erzeugt werden
-            outputDict = {}
-            print()
-            # Abfrage wie viele Items erzeugt werden
-            for i in itemNameList:
-                newItem.changeOutput({f"{i}": int(input(f"Wie viel von \"{i}\" wird erzeugt?: "))})
-
-            # Abfrage welche Items benötigt werden
-            item = input("\nWelches Item wird für diese Rezept benötigt?: ")
-            itemNameList = [item]
-
-            if input("Wird für dieses Rezept noch ein Item benötigt?: ") in nf.ja():
-                moreItems = True
-                while moreItems:
-                    item = input("Wie heißt dieses Item?: ")
-                    itemNameList.append(item)
-                    if not input("Wird für dieses Rezept noch ein Item benötigt?: ") in nf.ja():
-                        moreItems = False
-            
-            inputDict = {}
-            print()
-            # Abfrage wie viele Items gebraucht werden
-            for i in itemNameList:
-                newItem.changeInput({f"{i}": int(input(f"Wie viel von \"{i}\" wird benötigt?: "))})
-            
+            newItem = editRecipe(ItemCreation.Item(["newItem"]))
             items.append(newItem)
             save()
 
@@ -160,8 +197,9 @@ while main:
                 clear()
                 printAddItemMode()
         getOption = True
-        option = ""
+        option = []
     
+    # Listet alle bisher erstellten Rezepte
     elif option[0] == "listRecipes":
         clear()
         printListItems()
@@ -181,5 +219,124 @@ while main:
         clear()
         printTitle()
         getOption = True
-        option = ""
+        option = []
+    
+    # Um ein Rezept bearbeiten zu können
+    elif option[0] == "editRecipe":
+        clear()
+        printEditRecipe()
+        if len(option) > 1:
+            itemName = option[1]
+            if itemName in itemNames:
+                if input(f"Sind Sie sicher, dass Sie {itemName} ändern möchten?") in nf.ja():
+                    for i in items:
+                        if itemName in i.name:
+                            recipe = i
+                    recipe.output = {}
+                    recipe.input = {}
+                    editRecipe(recipe)
+                    save()
+
+        elif len(option) == 1:
+            itemName = input("Welches Rezept soll bearbeitet werden?: ")
+            if itemName in itemNames:
+                if input(f"Sind Sie sicher, dass Sie {itemName} ändern möchten?: ") in nf.ja():
+                    for i in items:
+                        if itemName in i.name:
+                            recipe = i
+                    recipe.output = {}
+                    recipe.input = {}
+                    editRecipe(recipe)
+                    save()
+        else:
+            print("Ungültige Eingabe. Für Hilfe mit oder eine liste von den Optionen, bitte \"help\" eingeben")  
+            sleep(3) 
+        
+        clear()
+        save()
+        printTitle()
+        itemName = ""
+        option = []
+        getOption = True
+
+    # Um ein Rezept Löschen zu können
+    elif option[0] == "delRecipe":
+        clear()
+        printDelRecipe()
+        if len(option) > 1 :
+            itemName = option[1]
+            if itemName in itemNames:
+                print(f"Sind Sie sicher, dass Sie \"{itemName}\" Löschen möchten? Wenn Ja bitte {red}\"LÖSCHEN\"{normal} eingeben")
+                if input() == "LÖSCHEN":
+                    for i in items:
+                        if itemName in i.name:
+                            delItem = i
+                    delNames = delItem.name
+                    for i in delNames:
+                        itemNames.remove(i)
+                    items.remove(delItem)
+                    print(f"\"{itemName}\" wurde erfolgreich entfernt...")
+                    input("Enter zum fortfahren drücken...")
+
+        elif len(option) == 1:
+            itemName = input("Welches Rezept soll gelöscht werden?: ")
+            if itemName in itemNames:
+                print(f"Sind Sie sicher, dass Sie \"{itemName}\" Löschen möchten? Wenn Ja bitte {red}\"LÖSCHEN\"{normal} eingeben")
+                if input() == "LÖSCHEN":
+                    for i in items:
+                        if itemName in i.name:
+                            delItem = i
+                    delNames = delItem.name
+                    for i in delNames:
+                        itemNames.remove(i)
+                    items.remove(delItem)
+                    print(f"\"{itemName}\" wurde erfolgreich entfernt...")
+                    input("Enter zum fortfahren drücken...")
+
+        else:
+            print("Ungültige Eingabe. Für Hilfe mit oder eine liste von den Optionen, bitte \"help\" eingeben")  
+            sleep(3)   
+
+        clear()
+        save()
+        printTitle()
+        itemName = ""
+        option = []
+        getOption = True
+    
+    # geht in den Rechner Modus
+    elif option[0] == "rechner":
+        rechner = True
+        while rechner:
+            clear()
+            printRechnerMode()
+            itemToCraft, amount = input("Welches Item und wie viel davon soll berechnet werden? Bitte Item und Menge mit einem Komma (,) Trennen.: ").split(",")
+            if itemToCraft in itemNames:
+                for i in items:
+                    if itemToCraft in i.name:
+                        item = i
+                
+                print(amount)
+                amount = int(amount)
+                amountOfCrafts = int(amount / item.output[itemToCraft]) + (amount % item.output[itemToCraft] > 0)
+
+                itemsToCraft = {}
+
+                for i in item.input:
+                    print(i)
+                    print(item.input)
+                    if i in itemsToCraft:
+                        itemsToCraft.update({i, itemsToCraft[i] + (amountOfCrafts * item.input[i])})
+                    else:
+                        itemsToCraft.update({i, amountOfCrafts * item.input[i]})
+                
+                print(itemsToCraft)
+                input()
             
+            else:
+                print("Ungültige Eingabe. Vergewissern Sie sich, dass keine Rechtschreibfehler im namen sind")
+                sleep(3)
+
+    # Schließt das Script
+    elif option[0] == "exit":
+        main = False
