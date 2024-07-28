@@ -1,10 +1,6 @@
-dezZ = int(input())
+import json
 
-zahlen = ""
-zwischenz = 0
-
-while dezZ > 0:
-    zahlen = str(dezZ % 2) + zahlen
-    dezZ = int(dezZ / 2)
-
-print(zahlen)
+save = open("RezepteRechner/test.json", "w")
+test = json.dumps([{"test": "Alos"}, {"Moin": "ws"}])
+save.write(test)
+save.close

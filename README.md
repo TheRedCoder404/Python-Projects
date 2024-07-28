@@ -34,7 +34,10 @@ Hi, hier sind alle Python dateien, welche ich bisher seit ich Python lerne, erst
 
 
 <details>
-  <summary>5. nuetzliche_fuctions</summary>
+  <summary>5. nuetzliche_functions</summary>
+
+  Hier habe ich ein paar nützliche Funktionen hineingeschrieben, welche ich immer mal wieder benutze oder vielleich benutzen könnte.
+
 </details>
 
 
