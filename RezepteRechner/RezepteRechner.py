@@ -52,6 +52,7 @@ def printHelp(inputlist: list) -> None:
             print(f"{i:<10}: {options[i]["beschr"]}")
     else:
         print("Es gibt noch keine Parameter verarbeitung")
+    print("\nWas würden Sie gerne tun?")
 
 def save() -> None:
     saveList = []
@@ -115,6 +116,36 @@ def editRecipe(recipe):
         recipe.changeInput({f"{i}": int(input(f"Wie viel von \"{i}\" wird benötigt?: "))})
             
     return recipe
+
+def crafter(itemname, amount: int, round: int = 0):
+    
+    itemsToCraft = {}
+
+    if itemname in itemNames:
+        for i in items:
+            if itemname in i.name:
+                item = i
+                break
+        
+        amountOfCrafts = int(amount / item.output[itemname]) + (amount % item.output[itemname] > 0)
+
+        lenOut = item.getLongestOut()
+        print(str('- ' * round) + str(itemname) + f" -> {amount}\n")
+        round += 1
+
+        for i in item.input:
+            if i in itemsToCraft:
+                itemsToCraft.update({i: itemsToCraft[i] + (amountOfCrafts * item.input[i])})
+            else:
+                itemsToCraft.update({i: amountOfCrafts * item.input[i]})
+            
+            if i in itemNames:
+                itemsToCraft.update(crafter(i, amountOfCrafts * item.input[i], round))
+                print()
+            else:
+                print(str('- ' * round) + f"{i:<{lenOut + (round * 2)}}" + f" -> {itemsToCraft[i]}")
+
+    return itemsToCraft
 
 
 options = {
@@ -186,6 +217,7 @@ while main:
         printAddItemMode()
         while addItemMode:
             newItem = editRecipe(ItemCreation.Item(["newItem"]))
+            itemNames.append(newItem["name"])
             items.append(newItem)
             save()
 
@@ -252,6 +284,7 @@ while main:
             print("Ungültige Eingabe. Für Hilfe mit oder eine liste von den Optionen, bitte \"help\" eingeben")  
             sleep(3) 
         
+        load()
         clear()
         save()
         printTitle()
@@ -310,32 +343,46 @@ while main:
         while rechner:
             clear()
             printRechnerMode()
-            itemToCraft, amount = input("Welches Item und wie viel davon soll berechnet werden? Bitte Item und Menge mit einem Komma (,) Trennen.: ").split(",")
-            if itemToCraft in itemNames:
-                for i in items:
-                    if itemToCraft in i.name:
-                        item = i
-                
-                print(amount)
-                amount = int(amount)
-                amountOfCrafts = int(amount / item.output[itemToCraft]) + (amount % item.output[itemToCraft] > 0)
+            itemToCraft = input("Welches Item und wie viel davon soll berechnet werden? Bitte Item und Menge mit einem Komma (,) Trennen.: ").split(",")
 
-                itemsToCraft = {}
-
-                for i in item.input:
-                    print(i)
-                    print(item.input)
-                    if i in itemsToCraft:
-                        itemsToCraft.update({i, itemsToCraft[i] + (amountOfCrafts * item.input[i])})
-                    else:
-                        itemsToCraft.update({i, amountOfCrafts * item.input[i]})
+            if (not "exit" in itemToCraft) and len(itemToCraft) > 1:
+                amount = itemToCraft[1]
+                itemToCraft = itemToCraft[0]
                 
-                print(itemsToCraft)
-                input()
+                if itemToCraft in itemNames:
+                    for i in items:
+                        if itemToCraft in i.name:
+                            item = i
+                    
+                    amount = int(amount)
+                    print("\n\n")
+
+                    itemsToCraft = crafter(itemToCraft, amount)
+                    
+                    input("\n\nZum Fortfahren Enter drücken...")
+                    clear()
+                    printRechnerMode()
+                else:
+                    print("Ungültige Eingabe! Dieses Item wurde noch nicht hinzugefügt. Falls doch, vergewisseren Sie sich, dass keine Rechtschreibfehler im namen sind.")
+                    sleep(1)
+                    input("Zum Fortfahren Enter drücken...")
+                    clear()
+                    printRechnerMode()
             
+            elif "exit" in itemToCraft:
+                clear()
+                printTitle()
+                itemName = ""
+                option = []
+                getOption = True
+                rechner = False
+                
             else:
-                print("Ungültige Eingabe. Vergewissern Sie sich, dass keine Rechtschreibfehler im namen sind")
-                sleep(3)
+                print("Ungültige Eingabe! Dieses Item wurde noch nicht hinzugefügt. Falls doch, vergewisseren Sie sich, dass keine Rechtschreibfehler im namen sind.")
+                sleep(1)
+                input("Zum Fortfahren Enter drücken...")
+                clear()
+                printRechnerMode()
 
     # Schließt das Script
     elif option[0] == "exit":

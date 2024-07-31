@@ -18,5 +18,12 @@ class Item:
     def changeInput(self, input: dict) -> None:
         self.input.update(input)
 
+    def getLongestOut(self) -> int:
+        length: int = 0
+        for i in self.output:
+            if len(i) > length:
+                length = len(i)
+        return length
+
     def item2dict(item):
         return item.__dict__
