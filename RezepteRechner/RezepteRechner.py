@@ -2,7 +2,7 @@ import json
 import os
 import sys
 import ItemCreation
-sys.path.append('../Git/nuetzliche_functions')
+sys.path.append('C:/Users/jmjas/Desktop/Ordnung/Python/Git/nuetzliche_functions')
 import nuetzliche_functions as nf
 from time import sleep
 os.system("")
