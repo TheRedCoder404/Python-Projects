@@ -3,6 +3,7 @@ import os
 import sys
 import ItemCreation
 sys.path.append('C:/Users/jmjas/Desktop/Ordnung/Python/Git/nuetzliche_functions')
+sys.path.append('../Git/RezepteRechner')
 import nuetzliche_functions as nf
 from time import sleep
 os.system("")
@@ -59,15 +60,15 @@ def save() -> None:
     for i in items:
         diction = i.item2dict()
         saveList.append(diction)
-    save = open("RezepteRechner/items.json", "w")
+    save = open("../RezepteRechner/items.json", "w")
     saveJson = json.dumps(saveList)
     save.write(saveJson)
     save.close()
 
 def load() -> None:
-    if os.path.isfile("RezepteRechner/items.json"):
+    if os.path.isfile("../RezepteRechner/items.json"):
         global items, itemNames
-        with open("RezepteRechner/items.json", "r") as outfile:
+        with open("../RezepteRechner/items.json", "r") as outfile:
             saveList = json.load(outfile)
         outfile.close
         for i in saveList:
@@ -217,7 +218,7 @@ while main:
         printAddItemMode()
         while addItemMode:
             newItem = editRecipe(ItemCreation.Item(["newItem"]))
-            itemNames.append(newItem["name"])
+            itemNames.append(newItem.name)
             items.append(newItem)
             save()
 
