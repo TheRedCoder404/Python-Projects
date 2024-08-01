@@ -68,6 +68,8 @@ def save() -> None:
 def load() -> None:
     if os.path.isfile("../RezepteRechner/items.json"):
         global items, itemNames
+        items = []
+        itemNames = []
         with open("../RezepteRechner/items.json", "r") as outfile:
             saveList = json.load(outfile)
         outfile.close
