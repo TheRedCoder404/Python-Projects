@@ -1,10 +1,10 @@
-Hi, hier sind alle Python dateien, welche ich bisher seit ich Python lerne, erstellt habe.\
-\
+Hi, hier sind alle Python dateien, welche ich bisher seit ich Python lerne, erstellt habe.  
+#  
 
 > [Disclaimer!]  
 > Diese Scipte sind rein zum daran lernen gedacht. Keiner dieser Scripte ist dafür gedacht fertig zu werden. Ich möchte nur ideen von mir an mit ihnen testen und an ihnen lernen.
 
-\
+#  
 
 <details open>
   <summary>1. Aufgaben</summary>
