@@ -1,3 +1,4 @@
+from math import comb
 from datetime import datetime
 global start
 
@@ -39,7 +40,7 @@ def xnor(condition1: bool, condition2: bool) -> bool:
     return not xor(condition1, condition2)
 
 
-#  Eine kleine funktion die letzten bestimmten Zeilen zu löschen
+#  Eine kleine funktion, um die letzten bestimmten Zeilen zu löschen
 def clear(lines: int):
     for x in range(lines):
         print('\033[1A', end='\x1b[2K')
@@ -55,13 +56,24 @@ def nein() -> list:
     return ["Nein", "nein", "n"]
 
 
-#  Eine funktion um zu prüfen, ob sich eine eingegebene Zahl, um eine narzisstische Zahl handelt.
+#  Eine funktion um zu prüfen, ob sich eine eingegebene Zahl, um eine narzisstische Zahl handelt
 def is_narcissistic_number(number: int) -> bool:
     hold = [int(i) ** int(len(str(number))) for i in str(number)]
     return sum(hold) == number
 
 
-#  Eine funktion um zu prüfen, ob sich eine eingegebene Zahl, um eine perfekte Zahl handelt.
+#  Eine funktion um zu prüfen, ob sich eine eingegebene Zahl, um eine perfekte Zahl handelt
 def is_perfect_number(number: int) -> bool:
     hold = [(int(i) if number % int(i) == 0 else 0) for i in range(1, int(number))]
     return sum(hold) == number
+
+
+#  Eine funktion um die fakultät einer eingebenen Zahl zu errechnen
+def faculty(x: int) -> int:
+    return 1 if x == 1 else x * faculty(x - 1)
+
+
+#  Eine funktion um Binomialverteilung zu berechenen
+def binomial(n: int, k: int, p: float) -> float:
+    comb(n, k) * p ** k * (1 - p) ** (n - k)
+
