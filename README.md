@@ -22,6 +22,13 @@ Hi, hier sind alle Python dateien, welche ich bisher seit ich Python lerne, erst
 
 
 <details>
+  <summary>3. Entwicklerheld</summary>
+
+  Das sind ein paar scripte, welche ich für ein paar aufgaben der Plattform "Entwicklerheld" gemacht habe.
+</details>
+
+
+<details>
   <summary>3. ErsteScripts</summary>
 
   Das sind die ersten paar Scripte welche ich in Python geschrieben habe. Sie basieren auf der ersten Aufgabe, welche wir von unserem Lehrer zu Programmieren mit Python erhalten haben und wenn mit langweilig war, habe ich dieses Script immer ein wenig erweitert.
