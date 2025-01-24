@@ -22,3 +22,26 @@
   Durch einen Bug den ich momentan nicht finde und auch nicht die Zeit habe weiter zu suchen, kann ich dieses Script momentan leider nicht vollenden.
 
 </details>
+
+<details>
+  <summary>SpaceAgeCalculator.py</summary>
+
+  In dieser Aufgabe sollte man ein Script schreiben, welches ein in Sekunden angegebenes alter, in ein vom jeweiligen Planeten abhängiges alter in jahren des jeweiligen Planeten, umwandelt.
+
+  Aufgabenbeschreibung:
+  Your task is to determine how old someone would be on different planets, given their age in seconds.
+
+  Each planet has a unique orbital period, which is the time it takes for the planet to complete one full orbit around the Sun, measured in Earth years.
+
+  Here are the orbital periods of the planets compared to Earth:
+
+  * Mercury: 0.2408467 Earth years
+  * Venus: 0.61519726 Earth years
+  * Earth: 1.0 Earth year (365.25 days or 31,557,600 seconds)
+  * Mars: 1.8808158 Earth years
+  * Jupiter: 11.862615 Earth years
+  * Saturn: 29.447498 Earth years
+  * Uranus: 84.016846 Earth years
+  * Neptune: 164.79132 Earth years
+
+</details>
